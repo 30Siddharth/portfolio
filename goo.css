@@ -185,6 +185,7 @@ iframe {
     width: 80px; /* Adjust image size */
     height: auto;
     margin-right: 15px;
+    border-radius: 0;
 }
 
 .publications td {
