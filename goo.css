@@ -30,7 +30,7 @@ p {
     text-align: justify; /* Justifies the text */
 }
 
-a {
+/* a {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
@@ -44,6 +44,17 @@ a {
 
 a:hover {
     background-color: #555;
+} */
+
+a {
+    text-decoration: underline; /* Underlines the hyperlink text */
+    color: blue; /* Sets the color to blue */
+    cursor: pointer; /* Makes it look clickable */
+}
+
+a:hover {
+    color: darkblue; /* Darken color when hovered */
+    text-decoration: none; /* Remove underline on hover */
 }
 
 img {
@@ -57,8 +68,8 @@ img {
 .links {
     display: flex;
     justify-content: center;
-    gap: 2px;
-    margin-top: 2px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .links a {
@@ -116,3 +127,71 @@ iframe {
     height: 100%;
     border: none;
 }
+
+.news-section table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+.news-section td {
+    padding: 10px;
+    vertical-align: middle; /* Align the content in the middle */
+}
+
+.news-section .date {
+    font-size: 14px;
+    color: #7f8c8d; /* Grey color for the date */
+    font-weight: bold;
+    width: 150px; /* Fixed width for the date column */
+}
+
+.news-section td a {
+    color: #207c80; /* Color for the news link */
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.news-section td a:hover {
+    color: #e74c3c; /* Hover effect */
+}
+
+/* Optional: Add spacing between rows for readability */
+.news-section tr {
+    margin-bottom: 15px;
+}
+
+/* Publications table styling */
+.publications table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.publications td {
+    padding: 12px 10px;
+    vertical-align: top;
+}
+
+.publications img {
+    width: 80px; /* Adjust image size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.publications td {
+    font-size: 0.9em; /* Slightly smaller text for the content */
+}
+
+.publications td strong {
+    font-size: 1.2em; /* Keep the paper title slightly larger */
+}
+
+.publications td em {
+    font-size: 0.85em; /* Make publication details smaller */
+    color: #555; /* Slightly muted color for better readability */
+}
+
+.publications td .authors {
+    font-size: 0.9em; /* Smaller font size for authors */
+}
+
+
