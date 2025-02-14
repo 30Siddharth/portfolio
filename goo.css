@@ -266,6 +266,7 @@ h1 {
 /* Brief description styling */
 .description {
     font-size: 0.85em;
+    text-align: center;
     color: #666;
     margin-top: 10px;
     margin-bottom: 5px;             /* Add space below the description */
@@ -296,5 +297,52 @@ h1 {
 
 /* Optional: Spacing below the name section */
 p {
+    margin-top: 15px;
+}
+
+/* General section spacing */
+.section {
+    margin: 0px 0; /* Adds space between sections */
+}
+
+
+/* Ensure each major section (News, Publications, CV) has proper spacing */
+.updates, .cv-container, .publications {
+    margin-top: 0px;  /* Space above each section */
+    margin-bottom: 40px; /* Space below each section */
+}
+
+.news-section
+{
+    margin-top: -30px;  /* Space above each section */
+    margin-bottom: 40px; /* Space below each section */
+}
+
+/* Ensure the profile header (image + name) aligns properly */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
     margin-top: 20px;
 }
+
+/* Ensure smooth spacing between paragraphs */
+p {
+    margin-bottom: 5px; 
+    text-align: justify; /* Keep text justified for clean alignment */
+}
+
+/* Adjust news and publication tables */
+.news-section table,
+.publications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space between title and content */
+}
+
+/* Navigation bar fix */
+body {
+    padding-top: 40px; /* Prevents content from being hidden under navbar */
+}
+
