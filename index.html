@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .links img {
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+        }
+        .updates {
+            margin-top: 20px;
+        }
+        .updates table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .updates td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .updates img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .cv-container {
+            margin-top: 30px;
+            width: 80%;
+            max-width: 800px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="your-photo.jpg" alt="Your Photo">
+        <h1>Your Name</h1>
+        <p>Welcome to my portfolio website.</p>
+        <p>I am a passionate professional dedicated to creating innovative and elegant solutions.</p>
+        
+        <div class="links">
+            <a href="your-google-scholar-link" target="_blank"><img src="google-scholar-icon.png" alt="Google Scholar"></a>
+            <a href="your-linkedin-link" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="your-research-gate-link" target="_blank"><img src="research-gate-icon.png" alt="ResearchGate"></a>
+        </div>
+        
+        <a href="your-cv.pdf" download>Download My CV</a>
+        
+        <div class="updates">
+            <h2>Latest News & Updates</h2>
+            <table>
+                <tr>
+                    <td><img src="news1.gif" alt="News 1"></td>
+                    <td><strong>Update 1</strong><br>Description of latest work or achievement</td>
+                </tr>
+                <tr>
+                    <td><img src="news2.gif" alt="News 2"></td>
+                    <td><strong>Update 2</strong><br>Another important milestone</td>
+                </tr>
+                <tr>
+                    <td><img src="news3.gif" alt="News 3"></td>
+                    <td><strong>Update 3</strong><br>Upcoming event or publication</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="cv-container">
+        <iframe src="your-cv.pdf" width="100%" height="100%"></iframe>
+    </div>
+</body>
+</html>
