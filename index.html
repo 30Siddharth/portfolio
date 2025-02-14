@@ -6,22 +6,41 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="goo.css">
 </head>
+
 <body>
-    <div class="content">
-        <img src="Siddharth.jpg" alt="Your Photo">
-        <h1>Siddharth Singh</h1>
-        <div class="links">
-            <a href="https://scholar.google.com/citations?user=OIjMBekAAAAJ&hl=en" target="_blank"><img src="Google_Scholar_logo.png" alt="Google Scholar"></a>
-            <a href="https://www.linkedin.com/in/siddh396/" target="_blank"><img src="Lndin_icon.png" alt="LinkedIn"></a>
-            <a href="https://www.researchgate.net/profile/Siddharth_Singh79?ev=hdr_xprf" target="_blank"><img src="ResearchGate_icon.png" alt="ResearchGate"></a>
+    <!-- Navigation Links at the Top -->
+    <div class="nav">
+        <a href="#about">About Me</a>
+        <a href="#news">Latest News</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+    </div>
+
+    
+        <div id="about" class="content">
+            <!-- Header section with image, name, description, and links -->
+            <div class="header">
+                <img src="Siddharth.jpg" alt="Your Photo" class="profile-img">
+                <div class="name-and-description">
+                    <h1>Siddharth Singh</h1>
+                    <p class="description">Ph.D. student in Robotics at University of Virginia.</p>
+                    <a href="Siddharth_CV_Feb25.pdf" download>Download My CV</a>
+                    <!-- <p class="description">Researching robotics and learning for safer industrial applications.</p> -->
+                    <div class="links">
+                        <a href="https://scholar.google.com/citations?user=OIjMBekAAAAJ&hl=en" target="_blank"><img src="Google_Scholar_logo.png" alt="Google Scholar"></a>
+                        <a href="https://www.linkedin.com/in/siddh396/" target="_blank"><img src="Lndin_icon.png" alt="LinkedIn"></a>
+                        <a href="https://www.researchgate.net/profile/Siddharth_Singh79?ev=hdr_xprf" target="_blank"><img src="ResearchGate_icon.png" alt="ResearchGate"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <p>Hi, I am Siddharth. I am a Ph.D. student in the Mechanical & Aerospace Engineering Department at the <a href="https://engineering.virginia.edu/departments/mechanical-and-aerospace-engineering" target="_blank">University of Virginia</a>. My research focuses on robotics and learning. The emphasis of my research is to make robots more reliable and safer to operate in industrial environments.</p>
+            <p>Prior to joining UVA, I completed my M.S.E. from the University of Pennsylvania in Mechanical Engineering and Applied Mechanics. I earned my B.E. in Manufacturing Process & Automation Engineering from Netaji Subhas Institute of Technology, New Delhi, India.</p>
+            
         </div>
-        <p>Hi, I am Siddharth. I am a Ph.D. student in the Mechanical & Aerospace Engineering Department at the <a href="https://engineering.virginia.edu/departments/mechanical-and-aerospace-engineering" target="_blank">University of Virginia</a> currently advised by <a href="https://isl-uva.github.io/team/" target="_blank">  Prof. Cindy Chang</a>. My research focuses on robotics and learning. The emphasis of my research is to make robots more reliable and safer to operate in industrial environments.</p>
-        <p>Prior to joining UVA, I completed my M.S.E. from the University of Pennsylvania in Mechanical Engineering and Applied Mechanics. I earned my B.E. in Manufacturing Process & Automation Engineering from Netaji Subhas Institute of Technology, New Delhi, India. I enjoy playing badminton, cricket and anything related to cars.</p>
-        
-        <a href="Siddharth_CV_Feb25.pdf" download>Download My CV</a>
         
 
-        <div class="news-section">
+        <div id="news" class="news-section">
             <h2>Latest News</h2>
             <table>
                 <tr>
@@ -41,7 +60,7 @@
         
         
         
-        <div class="publications">
+        <div id="publications" class="publications">
             <h2>Publications</h2>
             <table>
                 <tr>
@@ -72,7 +91,7 @@
         </div>
         
     
-    <div class="cv-container">
+    <div id="cv" class="cv-container">
         <iframe src="Siddharth_CV_Feb25.pdf"></iframe>
     </div>
 </body>
