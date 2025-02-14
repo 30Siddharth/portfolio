@@ -48,12 +48,12 @@ a:hover {
 
 a {
     text-decoration: underline; /* Underlines the hyperlink text */
-    color: blue; /* Sets the color to blue */
+    color: #207c80; /* Sets the color to blue */
     cursor: pointer; /* Makes it look clickable */
 }
 
 a:hover {
-    color: darkblue; /* Darken color when hovered */
+    color: #e74c3c; /* Darken color when hovered */
     text-decoration: none; /* Remove underline on hover */
 }
 
