@@ -26,7 +26,7 @@ h1 {
 
 p {
     color: #555;
-    font-size: 1.1em;
+    font-size: 1.0em;
     margin: 10px 0;
     text-align: justify; /* Justifies the text */
 }
@@ -178,6 +178,7 @@ iframe {
 .publications td {
     padding: 12px 10px;
     vertical-align: top;
+    text-align: left;
 }
 
 .publications img {
@@ -346,3 +347,38 @@ body {
     padding-top: 40px; /* Prevents content from being hidden under navbar */
 }
 
+/* Publication Tags */
+.pub-tag {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Different colors for each tag */
+.conference {
+    background-color: #3498db; /* Blue */
+}
+
+.journal {
+    background-color: #27ae60; /* Green */
+}
+
+.preprint {
+    background-color: #f39c12; /* Orange */
+}
+
+.technical-report {
+    background-color: #8e44ad; /* Purple */
+}
+
+
+/* Set max-width to control the size of the text column */
+.publications td:nth-child(2) {
+    max-width: 500px; /* Adjust this value as needed */
+    word-wrap: break-word; /* Ensures text breaks appropriately */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) when text is too long */
+}
