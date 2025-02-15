@@ -1,45 +1,47 @@
-/* goo.css */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Full white background */
-    color: #333; /* Dark text */
+    background-color: #fff;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .content {
-    max-width: 800px; /* Limits width to 800px */
-    width: 100%;
+    max-width: 700px;
+    /* width: 100%; */
     padding: 20px;
-    margin-bottom: 40px;  /* Space below the profile section */
+    margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #333;
     margin: 10px 0;
 }
 
+.content p strong {
+    font-size: 1.5em;
+}
+
 p {
     color: #555;
-    font-size: 1.0em;
+    font-size: 1em;
     margin: 10px 0;
-    text-align: justify; /* Justifies the text */
+    text-align: justify;
 }
 
 a {
-    text-decoration: underline; /* Underlines the hyperlink text */
-    color: #207c80; /* Sets the color to blue */
-    cursor: pointer; /* Makes it look clickable */
+    text-decoration: underline;
+    color: #207c80;
+    cursor: pointer;
 }
 
 a:hover {
-    color: #e74c3c; /* Darken color when hovered */
-    text-decoration: none; /* Remove underline on hover */
+    color: #e74c3c;
+    text-decoration: none;
 }
 
 img {
@@ -50,128 +52,80 @@ img {
     object-fit: cover;
 }
 
-.links {
+/* Header section */
+.header {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.links a {
-    width: 24px;
-    height: 24px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.links img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Add margin to create space between sections */
-.content {
-    margin-bottom: 40px;  /* Add space below the profile section */
-}
-
-.news-section,
-.updates,
-.cv-container {
-    margin-top: 40px;    /* Space above each section */
-    margin-bottom: 40px; /* Space below each section */
-}
-
-/* Optional: You can adjust each section's margin individually */
-.news-section h2,
-.updates h2,
-.cv-container h2 {
-    margin-top: 20px; /* Add space above section titles */
-}
-
-p {
-    margin-top: 20px; /* Add space between paragraphs */
-}
-
-.updates {
-    margin-top: 40px;    /* Space above each new section */
-    margin-bottom: 40px; /* Space below each section */
-}
-
-.updates h2 {
-    color: #333;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.updates table {
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+    max-width: 800px;
 }
 
-.updates td {
-    padding: 15px;
-    vertical-align: middle;
-}
-
-.updates td img {
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
     object-fit: cover;
 }
 
-.cv-container {
-    margin-top: 40px;    /* Space above each new section */
-    margin-bottom: 40px; /* Space below each section */
-    width: 100%;
+.name-and-description {
+    text-align: center;
+}
+
+.name-and-description h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;         /* Center links horizontally */
+    gap: 15px;                       /* Space between links */
+    margin-top: 20px;                 /* Add space above the links */
+}
+
+.links a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.links img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+}
+
+/* News Section */
+.news-section {
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.news-section ul {
     max-width: 800px;
-    height: 500px;
+    /* width: 100%; */
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.news-section table {
-    width: 100%;
-    border-collapse: collapse; /* Collapse borders for a cleaner look */
-}
-
-.news-section td {
-    padding: 10px;
-    vertical-align: middle; /* Align the content in the middle */
-}
-
-.news-section .date {
-    font-size: 14px;
-    color: #7f8c8d; /* Grey color for the date */
-    font-weight: bold;
-    width: 150px; /* Fixed width for the date column */
-}
-
-.news-section td a {
-    color: #207c80; /* Color for the news link */
-    text-decoration: underline;
-    font-size: 16px;
-}
-
-.news-section td a:hover {
-    color: #e74c3c; /* Hover effect */
-}
-
-.news-section tr {
-    margin-bottom: 15px; /* Add space between rows */
-}
-
-/* Publications table styling */
+/* Publications table */
 .publications table {
-    width: 100%;
+    max-width: 800px;
+    /* width: 100%; */
     border-collapse: collapse;
 }
 
@@ -182,27 +136,60 @@ iframe {
 }
 
 .publications img {
-    width: auto; /* Adjust image size */
+    width: auto;
     height: 80px;
     margin-right: 15px;
     border-radius: 0;
 }
 
-.publications td {
-    font-size: 0.9em; /* Slightly smaller text for the content */
-}
-
 .publications td strong {
-    font-size: 1.2em; /* Keep the paper title slightly larger */
+    font-size: 1.2em;
 }
 
 .publications td em {
-    font-size: 0.85em; /* Make publication details smaller */
-    color: #555; /* Slightly muted color for better readability */
+    font-size: 0.85em;
+    color: #555;
 }
 
 .publications td .authors {
-    font-size: 0.9em; /* Smaller font size for authors */
+    font-size: 0.9em;
+}
+
+.publications td .authors u {
+    text-decoration: underline;
+}
+
+.publications td:nth-child(2) {
+    max-width: 500px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Publication Tags */
+.pub-tag {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.conference {
+    background-color: #3498db;
+}
+
+.journal {
+    background-color: #27ae60;
+}
+
+.preprint {
+    background-color: #f39c12;
+}
+
+.technical-report {
+    background-color: #8e44ad;
 }
 
 /* Navigation bar styling */
@@ -235,151 +222,12 @@ body {
     padding-top: 60px;           /* Prevent content from hiding behind the nav bar */
 }
 
-/* Header section for profile image, name, description, and links */
-.header {
-    display: flex;                   /* Use Flexbox */
-    align-items: center;             /* Vertically align items */
-    justify-content: center;         /* Center content horizontally */
-    margin-top: 20px;                /* Add some space from the top */
-}
 
-/* Profile image styling */
-.profile-img {
-    width: 300px;                    /* Adjust the image size */
-    height: 300px;                   /* Maintain a square shape */
-    border-radius: 0;              /* Make the image round */
-    margin-right: 20px;              /* Space between image and name */
-    object-fit: cover;               /* Ensure the image fits well */
-}
-
-/* Container for the name, description, and links */
-.name-and-description {
-    text-align: center;              /* Center the name and description */
-}
-
-/* Name styling */
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;                       /* Remove default margin */
-    color: #333;                     /* Dark color for the text */
-}
-
-/* Brief description styling */
-.description {
-    font-size: 0.85em;
-    text-align: center;
-    color: #666;
-    margin-top: 10px;
-    margin-bottom: 5px;             /* Add space below the description */
-}
-
-/* Links styling */
-.links {
-    display: flex;
-    justify-content: center;         /* Center links horizontally */
-    gap: 15px;                       /* Space between links */
-    margin-top: 10px;                 /* Add space above the links */
-}
-
-.links a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.links img {
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-}
-
-/* Optional: Spacing below the name section */
-p {
-    margin-top: 15px;
-}
-
-/* General section spacing */
-.section {
-    margin: 0px 0; /* Adds space between sections */
-}
-
-
-/* Ensure each major section (News, Publications, CV) has proper spacing */
-.updates, .cv-container, .publications {
-    margin-top: 0px;  /* Space above each section */
-    margin-bottom: 40px; /* Space below each section */
-}
-
-.news-section
-{
-    margin-top: -30px;  /* Space above each section */
-    margin-bottom: 40px; /* Space below each section */
-}
-
-/* Ensure the profile header (image + name) aligns properly */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Space between image and text */
-    margin-top: 20px;
-}
-
-/* Ensure smooth spacing between paragraphs */
-p {
-    margin-bottom: 5px; 
-    text-align: justify; /* Keep text justified for clean alignment */
-}
-
-/* Adjust news and publication tables */
-.news-section table,
-.publications table {
+.section-divider {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Space between title and content */
-}
-
-/* Navigation bar fix */
-body {
-    padding-top: 40px; /* Prevents content from being hidden under navbar */
-}
-
-/* Publication Tags */
-.pub-tag {
-    font-size: 0.8em;
-    font-weight: bold;
-    padding: 3px 8px;
-    margin-left: 8px;
-    border-radius: 5px;
-    color: white;
-}
-
-/* Different colors for each tag */
-.conference {
-    background-color: #3498db; /* Blue */
-}
-
-.journal {
-    background-color: #27ae60; /* Green */
-}
-
-.preprint {
-    background-color: #f39c12; /* Orange */
-}
-
-.technical-report {
-    background-color: #8e44ad; /* Purple */
-}
-
-
-/* Set max-width to control the size of the text column */
-.publications td:nth-child(2) {
-    max-width: 500px; /* Adjust this value as needed */
-    word-wrap: break-word; /* Ensures text breaks appropriately */
-    overflow: hidden; /* Hide any overflow text */
-    text-overflow: ellipsis; /* Add ellipsis (...) when text is too long */
+    max-width: 600px;
+    border: none;
+    height: 1px;
+    background-color: #ddd; /* Light grey line */
+    margin: 40px 0; /* Adjust spacing */
 }
