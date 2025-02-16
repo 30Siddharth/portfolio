@@ -116,10 +116,21 @@ img {
 
 .news-section ul {
     max-width: 800px;
-    /* width: 100%; */
     list-style-type: square;
     padding-left: 20px;
     text-align: left;
+    font-size: 0.85em;
+}
+
+.news-section a {
+    word-wrap: break-word;
+}
+
+.news-list {
+    padding: 0;
+    margin: 0 auto;
+    list-style-position: inside;
+    max-width: 800px; /* Match width with other sections */
 }
 
 /* Publications table */
@@ -231,3 +242,4 @@ body {
     background-color: #ddd; /* Light grey line */
     margin: 40px 0; /* Adjust spacing */
 }
+
