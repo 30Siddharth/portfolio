@@ -210,6 +210,10 @@ img {
     background-color: #8e44ad;
 }
 
+.workshop {
+    background-color: #d486a7;
+}
+
 /* Navigation bar styling */
 .nav {
     display: flex;             /* Use Flexbox for row layout */
