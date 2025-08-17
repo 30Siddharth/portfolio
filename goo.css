@@ -42,7 +42,7 @@ p {
 
 a {
     text-decoration: underline;
-    color: #205383;
+    color: #2977c0;
     cursor: pointer;
 }
 
@@ -247,10 +247,10 @@ body {
 
 .section-divider {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     border: none;
     height: 1px;
-    background-color: #ddd; /* Light grey line */
+    background-color: #000000; /* Light grey line */
     margin: 40px 0; /* Adjust spacing */
 }
 
@@ -259,7 +259,7 @@ body {
     max-width: 600px;
     border: none;
     height: 1px;
-    background-color: #ddd; /* Light grey line */
+    background-color: #030000; /* Light grey line */
     margin: 10px 0; /* Adjust spacing */
 }
 
