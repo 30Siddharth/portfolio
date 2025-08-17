@@ -42,7 +42,7 @@ p {
 
 a {
     text-decoration: underline;
-    color: #207c80;
+    color: #205383;
     cursor: pointer;
 }
 
@@ -67,7 +67,7 @@ img {
     gap: 20px;
     margin-top: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .profile-img {
@@ -83,7 +83,7 @@ img {
 
 .name-and-description h1 {
     font-size: 1.8em;
-    margin: 0;
+    margin: 10;
 }
 
 .description {
@@ -269,4 +269,3 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
-
