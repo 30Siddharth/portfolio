@@ -10,7 +10,7 @@ body {
 }
 
 .content {
-    max-width: 700px;
+    max-width: 900px;
     /* width: 100%; */
     padding: 20px;
     margin-bottom: 0px;
@@ -34,7 +34,7 @@ h3 {
 }
 
 p {
-    color: #555;
+    color: #070707;
     font-size: 1em;
     margin: 10px 0;
     text-align: justify;
@@ -88,7 +88,7 @@ img {
 
 .description {
     font-size: 1em;
-    color: #666;
+    color: #383838;
     margin-top: 5px;
     text-align: center;
 }
@@ -122,11 +122,11 @@ img {
 }
 
 .news-section ul {
-    max-width: 800px;
+    max-width: 1000px;
     list-style-type: square;
     padding-left: 20px;
     text-align: left;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 .news-section a {
@@ -134,10 +134,10 @@ img {
 }
 
 .news-list {
-    padding: 0;
+    padding: 5;
     margin: 0 auto;
     list-style-position: inside;
-    max-width: 800px; /* Match width with other sections */
+    max-width: 1000px; /* Match width with other sections */
 }
 
 /* Publications table */
@@ -178,7 +178,7 @@ img {
 }
 
 .publications td:nth-child(2) {
-    max-width: 500px;
+    max-width: 700px;
     word-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
