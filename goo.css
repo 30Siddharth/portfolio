@@ -104,6 +104,12 @@ img {
     text-align: center;
 }
 
+.background-list {
+  padding-left: 50px; /* increase to move list further right */
+  margin-top: 0;
+  list-style-type: disc;
+}
+
 .links {
     display: flex;
     justify-content: center;         /* Center links horizontally */
