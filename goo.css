@@ -1,16 +1,12 @@
 /* ===== Base ===== */
 body {
-    /* System font stack — looks native on macOS, Windows, and Linux without
-       any network request. Replaces the previously unloaded 'Roboto' font. */
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                 Helvetica, Arial, sans-serif; */
-    /* font-family: "Source Serif 4", Georgia, "Times New Roman", Times, serif; */
-    font-family: "Times New Roman", Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 80px 20px 40px;        /* top room for fixed nav + side gutters */
     background-color: #fff;
     color: #333;
-    line-height: 1.35;
+    line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -43,7 +39,7 @@ h3 {
 
 p {
     color: #070707;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 10px 0;
     text-align: left;               /* was 'justify' — created rivers in Safari */
 }
@@ -111,7 +107,6 @@ img {
     padding-left: 50px;
     margin-top: 0;
     list-style-type: disc;
-    font-size: 1.1em;
 }
 
 .links {
@@ -151,10 +146,7 @@ img {
     padding-left: 20px;
     text-align: left;
     font-size: 1em;
-    /* On desktop, cap the height for a tidy scroll box. On phones we drop
-       this in the media query below — nested scroll is awful on touch. */
-    max-height: 300px;
-    overflow-y: auto;
+    /* Scrollable box removed — news now lives on its own page */
 }
 
 .news-section a { word-wrap: break-word; }
@@ -287,11 +279,6 @@ img {
         gap: 16px;
     }
     .profile-img { width: 200px; height: 200px; }
-
-    .news-section ul {
-        max-height: none;            /* no nested scroll on touch */
-        overflow: visible;
-    }
 
     /* Cards instead of two-column publication rows */
     .publications td { display: block; padding: 8px 0; }
