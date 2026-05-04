@@ -38,9 +38,12 @@ h3 {
 
 p {
     color: #070707;
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 10px 0;
-    text-align: left;               /* was 'justify' — created rivers in Safari */
+    /* text-align: left;                */
+    /* was 'justify' — created rivers in Safari */
+    text-align: justify;
+    hyphens: auto;
 }
 
 a {
@@ -106,6 +109,7 @@ img {
     padding-left: 50px;
     margin-top: 0;
     list-style-type: disc;
+    font-size: 1.1em;
 }
 
 .links {
@@ -234,7 +238,7 @@ img {
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.05em;
+    font-size: 1.2em;
     font-weight: 600;
     margin: 0;                      /* gap on .nav handles spacing */
 }
