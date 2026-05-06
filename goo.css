@@ -5,7 +5,7 @@ body {
     padding: 80px 20px 40px;        /* top room for fixed nav + side gutters */
     background-color: #fff;
     color: #333;
-    line-height: 1.35;
+    line-height: 1.45;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -14,10 +14,15 @@ body {
 }
 
 .content {
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
     padding: 0;
     margin-bottom: 0;
+}
+
+.content-wide  { 
+    max-width: 850px; 
+    width: 100%; 
 }
 
 h1 {
@@ -56,7 +61,7 @@ p {
 
 a {
     text-decoration: underline;
-    color: #2977c0;
+    color: #11964b;
     cursor: pointer;
 }
 
@@ -156,7 +161,7 @@ img {
     list-style-type: square;
     padding-left: 20px;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.0em;
     /* Scrollable box removed — news now lives on its own page */
 }
 
@@ -246,7 +251,7 @@ img {
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: 600;
     margin: 0;                      /* gap on .nav handles spacing */
 }
