@@ -1,3 +1,7 @@
+---
+layout: null
+title: Blog
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog — Siddharth Singh</title>
     <meta name="description" content="Blog posts by Siddharth Singh on robotics, research, and more.">
-    <link rel="stylesheet" href="/portfolio/goo.css">
+    <link rel="stylesheet" href="{{ '/goo.css' | relative_url }}">
     <style>
         .blog-list {
             max-width: 600px;
@@ -68,11 +72,11 @@
 <body>
     <!-- Navigation -->
     <div class="nav">
-        <a href="/portfolio/index.html">Home</a>
-        <a href="/portfolio/news.html">News</a>
-        <a href="/portfolio/publications.html">Publications</a>
-        <a href="/portfolio/projects.html">Projects</a>
-        <a href="/portfolio/blog/index.html">Blog</a>
+        <a href="{{ '/index.html' | relative_url }}">Home</a>
+        <a href="{{ '/news.html' | relative_url }}">News</a>
+        <a href="{{ '/publications.html' | relative_url }}">Publications</a>
+        <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+        <a href="{{ '/blog/index.html' | relative_url }}">Blog</a>
     </div>
 
     <div class="content">
