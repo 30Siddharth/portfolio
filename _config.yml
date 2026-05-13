@@ -1,0 +1,26 @@
+# Jekyll configuration for Siddharth Singh's portfolio blog
+title: Siddharth Singh
+description: Postdoctoral Researcher at Oak Ridge National Laboratory
+baseurl: "/portfolio"
+url: "https://30siddharth.github.io"
+
+author:
+  name: Siddharth Singh
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude non-site files
+exclude:
+  - README.md
+  - references.bib
+  - "*.Zone.Identifier"
+
+# Permalink style for blog posts
+permalink: /blog/:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
