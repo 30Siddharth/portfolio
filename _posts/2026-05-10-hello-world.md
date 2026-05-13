@@ -5,31 +5,11 @@ date: 2026-05-10
 tags: [general]
 ---
 
-Welcome to my blog! This is a sample post to demonstrate how the blog works.
+Welcome to my blog! This is my first blog. I am new to Jekyll and I am still learning. As time goes by I will add a few things here. 
 
-I'll be using this space to share thoughts on robotics, research, and anything else that comes to mind.
+I'll be using this space to share thoughts on robotics, science, maybe F1, research, and anything else that comes to mind. Maybe some photos, maybe some thoughts. 
 
-## How This Works
+> All thoughts and materials shared and mentioned on these blogs are mine and mine only. 
 
-Posts are written in **Markdown** — the same format used in Obsidian. To publish a new post:
 
-1. Write your post in Obsidian as a regular Markdown note
-2. Save the file with the naming format `YYYY-MM-DD-your-title.md`
-3. Add the front matter block at the top (title, date, tags)
-4. Drop the file into the `_posts/` folder in this repository
-5. Push to GitHub — the site rebuilds automatically
 
-## Front Matter Template
-
-Every post needs this block at the very top:
-
-```yaml
----
-layout: post
-title: "Your Post Title Here"
-date: YYYY-MM-DD
-tags: [tag1, tag2]
----
-```
-
-That's it. Happy writing!
