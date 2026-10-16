@@ -54,7 +54,7 @@ h3 {
 
 p {
     color: #070707;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 10px 0;
     /* text-align: left;                */
     /* was 'justify' — created rivers in Safari */
@@ -125,7 +125,7 @@ img {
     padding-left: 50px;
     margin-top: 0;
     list-style-type: disc;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .links {
@@ -166,7 +166,7 @@ img {
     padding: 0;
     margin: 0 auto;
     text-align: left;
-    font-size: 1.05em;
+    font-size: 1em;
     line-height: 1.6;
 }
 
