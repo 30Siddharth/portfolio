@@ -87,17 +87,32 @@ img {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 0;                  /* less space under the nav bar */
     width: 100%;
     max-width: 900px;
 }
 
+/* Intro row: photo + links (left) beside the about text (right) */
+.intro {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    align-items: stretch;           /* photo column as tall as the about text */
+    margin-bottom: 10px;
+}
+
+.about p:first-child { margin-top: 0; }
+.about p:last-child { margin-bottom: 0; }
+
+.profile-side { width: 240px; }
+
 .profile-img {
-    width: 240px;
-    height: 240px;
+    display: block;
+    width: 100%;
+    height: 100%;                   /* fill the row: top/bottom line up with the text */
+    min-height: 200px;
     border-radius: 0;
     object-fit: cover;
-    flex-shrink: 0;
 }
 
 .name-and-description {
@@ -118,6 +133,7 @@ img {
     font-size: 1.1em;
     color: #383838;
     margin-top: 0.5em;
+    margin-bottom: 44px;            /* space between title and bio */
     text-align: center;
 }
 
@@ -128,27 +144,40 @@ img {
     font-size: 1em;
 }
 
+/* Row of small pill buttons between the intro and Research */
 .links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 8px;
+    margin: 22px 0 26px;
 }
 
 .links a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 9px;
+    border: 1px solid #b9dcc8;
+    border-radius: 999px;
+    font-size: 0.82em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.links img {
-    width: 20px;
-    height: 20px;
-    border-radius: 0;
-    object-fit: contain;
+.links a:hover {
+    background-color: #11964b;
+    border-color: #11964b;
+    color: #fff;
+}
+
+/* Small one-colour logos (inline SVGs in index.html) take the link colour */
+.links svg {
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 3px;
+    vertical-align: -0.1em;
+    fill: currentColor;
 }
 
 /* ===== News ===== */
@@ -305,7 +334,8 @@ img {
         flex-direction: column;
         gap: 16px;
     }
-    .profile-img { width: 200px; height: 200px; }
+    .profile-img { width: 160px; height: 160px; margin: 0 auto; }
+    .profile-side { width: 220px; }
 
     /* Cards instead of two-column publication rows */
     .publications td { display: block; padding: 8px 0; }
@@ -318,4 +348,7 @@ img {
     .publications iframe { height: 500px; }
 
     p { text-align: left; hyphens: auto; }
+
+    .intro { grid-template-columns: 1fr; gap: 16px; }   /* stack on phones */
+    .profile-side { justify-self: center; }
 }
